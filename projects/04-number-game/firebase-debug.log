@@ -1,0 +1,91 @@
+[debug] [2024-01-01T07:01:08.921Z] ----------------------------------------------------------------------
+[debug] [2024-01-01T07:01:08.923Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-01T07:01:08.924Z] CLI Version:   13.0.2
+[debug] [2024-01-01T07:01:08.924Z] Platform:      win32
+[debug] [2024-01-01T07:01:08.925Z] Node Version:  v18.18.0
+[debug] [2024-01-01T07:01:08.927Z] Time:          Mon Jan 01 2024 15:01:08 GMT+0800 (Taipei Standard Time)
+[debug] [2024-01-01T07:01:08.927Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-01T07:01:08.938Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-01T07:01:08.939Z] > authorizing via signed-in user (batobatodavid20@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\Number Guess
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-01T07:01:20.162Z] > refreshing access token with scopes: []
+[debug] [2024-01-01T07:01:20.165Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-01T07:01:20.166Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-01T07:01:20.451Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------002995331370339718677238","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-01-01T07:01:20.452Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-01-01T07:01:20.602Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\auth.js:506:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\apiv2.js:156:22)
+    at async Client.addAuthHeader (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\apiv2.js:147:21)
+    at async Client.request (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\apiv2.js:103:34)
+    at async getProjectPage (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\management\projects.js:238:17)
+    at async getFirebaseProjectPage (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\management\projects.js:255:23)
+    at async selectProjectInteractively (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\management\projects.js:94:41)
+    at async doSetup (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-01-01T07:01:35.164Z] ----------------------------------------------------------------------
+[debug] [2024-01-01T07:01:35.167Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-01T07:01:35.168Z] CLI Version:   13.0.2
+[debug] [2024-01-01T07:01:35.168Z] Platform:      win32
+[debug] [2024-01-01T07:01:35.168Z] Node Version:  v18.18.0
+[debug] [2024-01-01T07:01:35.171Z] Time:          Mon Jan 01 2024 15:01:35 GMT+0800 (Taipei Standard Time)
+[debug] [2024-01-01T07:01:35.171Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-01T07:01:35.183Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-01T07:01:35.184Z] > authorizing via signed-in user (batobatodavid20@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\Number Guess
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-01T07:01:41.671Z] > refreshing access token with scopes: []
+[debug] [2024-01-01T07:01:41.674Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-01T07:01:41.674Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-01T07:01:42.159Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-01T07:01:42.160Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-01T07:01:42.175Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-01-01T07:01:42.268Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects?pageSize=100, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100 failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2024-01-01T07:01:42.268Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+[debug] [2024-01-01T07:01:42.387Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+    at RetryOperation._fn (C:\Users\Admin\AppData\Roaming\nvm\v18.18.0\node_modules\firebase-tools\lib\apiv2.js:246:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

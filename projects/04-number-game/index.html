@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="easy">
+    <div class="container">
+      <div class="top">
+        <div class="top-container">
+          <h1>Guess the Number!</h1>
+          <p>
+            We have selected a random number given by the difficulty. See if you
+            can guess it in difficulty based turns or fewer. We'll tell you if
+            your guess was too high or too low.
+          </p>
+        </div>
+      </div>
+      <main class="main">
+        <div class="main-container">
+          <div class="game-container">
+            <div class="game-top easy"></div>
+            <h1 class="number-container easy">?</h1>
+            <p class="game-message">Guess the number between 1 and 50</p>
+            <div class="play-container">
+              <button type="submit" class="play-btn">Play</button>
+              <form class="guess-form hidden">
+                <input
+                  type="number"
+                  class="guess-input"
+                  placeholder="Enter your guess..."
+                />
+                <button type="submit" class="guess-btn">Guess</button>
+              </form>
+            </div>
+            <div class="attemtps-container">
+              <div class="guess-attempts">
+                <span> Number of Guesses: </span>
+                <span id="attempts">0</span>
+              </div>
+              <div class="guess-chances">
+                <span>Number of Chances: </span>
+                <span id="chances">10</span>
+              </div>
+            </div>
+
+            <h4 id="timer" class="timer">00:00:000</h4>
+            <h4 id="highscore-timer" class="highscore-timer">00:00:000</h4>
+
+            <div class="difficulty-container">
+              <label for="difficulty">Difficulty</label>
+              <select class="difficulty-select" id="difficultySelect">
+                <option value="easy" selected>Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+            <button class="stop-btn hidden">Stop</button>
+          </div>
+
+          <div class="leaderboards-container">
+            <i>Join Leaderboards!</i>
+            <!-- Login -->
+            <form id="login-form">
+              <div class="login-container hidden">
+                <h2>Login</h2>
+                <div class="login-input-container">
+                  <label for="login-email">Email</label>
+                  <input
+                    type="email"
+                    class="login-email"
+                    placeholder="Enter your email..."
+                  />
+                </div>
+                <div class="login-input-container">
+                  <label for="login-password">Password</label>
+                  <input
+                    type="password"
+                    class="login-password"
+                    placeholder="Enter your password..."
+                  />
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <span class="switch-to-sign-up">Don't have an Account?</span>
+              </div>
+            </form>
+
+            <!-- Signup -->
+            <form id="signup-form">
+              <div class="signup-container">
+                <h2>Sign Up</h2>
+                <div class="signup-input-container">
+                  <label for="signup-display-name">Display Name</label>
+                  <input
+                    required
+                    minlength="3"
+                    maxlength="12"
+                    type="text"
+                    class="signup-display-name"
+                    placeholder="Enter your display name..."
+                  />
+                </div>
+                <div class="signup-input-container">
+                  <label for="signup-email">Email</label>
+                  <input
+                    type="email"
+                    class="signup-email"
+                    placeholder="Enter your email..."
+                  />
+                </div>
+                <div class="signup-input-container">
+                  <label for="signup-password">Password</label>
+                  <input
+                    type="password"
+                    class="signup-password"
+                    placeholder="Enter your password..."
+                  />
+                </div>
+                <button type="submit" class="signup-btn">Sign Up</button>
+                <span class="switch-to-login">Have an Account?</span>
+              </div>
+            </form>
+
+            <!-- Leaderboards -->
+            <div class="ranks hidden">
+              <nav class="nav">
+                <span class="difficulty-mode">Easy Mode</span>
+                <span>
+                  Rank by:
+                  <select class="sort-select">
+                    <option selected value="speed">Speed</option>
+                    <option value="accuracy">Accuracy</option>
+                  </select>
+                </span>
+              </nav>
+              <ul class="rank-head">
+                <span class="rank-head--rank">Rank</span>
+                <span class="rank-head--name">Name</span>
+                <span class="rank-head--time">Time Taken</span>
+                <span class="rank-head--guesses">Guesses #</span>
+              </ul>
+              <ul class="rank-list"></ul>
+              <button class="signout-btn">Sign Out</button>
+              <span class="display-name"></span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>
